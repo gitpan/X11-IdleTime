@@ -8,5 +8,5 @@ WriteMakefile(
     'PREREQ_PM'		=> {}, # e.g., Module::Name => 1.1
     ($] >= 5.005 ?    ## Add these new keywords supported since 5.005
       (ABSTRACT_FROM => 'IdleTime.pm', # retrieve abstract from module
-       AUTHOR     => 'Adam Wendt <adam@internal.cyberhqz.com>') : ()),
+       AUTHOR     => 'Adam Wendt <adam@ipwebdev.com>') : ()),
 );

@@ -10,7 +10,7 @@ $VERSION = '0.01';
 
 use Inline (
 	C => 'DATA',
-	VERSION => '0.01',
+	VERSION => '0.03',
 	NAME => 'X11::IdleTime',
 	LIBS => '-L/usr/X11R6/lib/ -lX11 -lXext -lXss',
 	);
@@ -31,7 +31,7 @@ X11::IdleTime - Get the idle time of X11
 
    $idle = GetIdleTime();
 
-   print "You're mouse and keyboard have been idle for $idle seconds.\n";
+   print "Your mouse and keyboard have been idle for $idle seconds.\n";
 
 =head1 DESCRIPTION
 
@@ -43,7 +43,7 @@ Adam Wendt <adam@ipwebdev.com> (http://ipwebdev.com/weblog/)
 
 =head1 COPYRIGHT
 
-Copyright 2003 Adam Wendt <adam@ipwebdev.com>
+Copyright 2003-2005 Adam Wendt <adam@ipwebdev.com>
 
 This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 
@@ -66,6 +66,8 @@ int GetIdleTime () {
         if((display=XOpenDisplay(NULL)) == NULL) { return(-1); }
         screen = DefaultScreen(display);
         XScreenSaverQueryInfo(display, RootWindow(display,screen), mit_info);
+	XFree(mit_info);
+	XCloseDisplay(display); 
         idle_time = (mit_info->idle) / 1000;
         return idle_time;
 }

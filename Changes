@@ -1,6 +1,12 @@
 Revision history for Perl extension X11::IdleTime.
 
+0.03  Thu Feb 10 09:40:00 2003
+	- Fixed X11 connection leak reported by many people.
+
+0.02  Date
+	- Grammar correction in documentation, corrected by
+		Stephen Nelson <senelson@tdl.com>
+
 0.01  Fri Feb  7 23:50:40 2003
 	- original version; created by h2xs 1.22 with options
 		-PAXn X11::IdleTime
-

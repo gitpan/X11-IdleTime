@@ -1,5 +1,9 @@
 Revision history for Perl extension X11::IdleTime.
 
+0.04  Sat Feb 24 01:00:00 2007
+	- Fixed build issue with version number not correctly
+	  detected by MakeMaker
+
 0.03  Thu Feb 10 09:40:00 2003
 	- Fixed X11 connection leak reported by many people.
 

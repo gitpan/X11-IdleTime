@@ -1,5 +1,9 @@
 Revision history for Perl extension X11::IdleTime.
 
+0.06  Wed Jul 2 10:20:00 2008
+    - Added Devel::CheckLib to check for required X11 libraries
+      also should now include a proper META.yml
+
 0.05  Thu Dec 6 11:00:00 2007
     - Fixed using a freed resource reported by
         Michael Canann <mike_canann@yahoo.com>

@@ -6,11 +6,11 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK);
 require Exporter;
 @ISA = qw(Exporter);
 @EXPORT = qw(GetIdleTime);
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 use Inline (
 	C => 'DATA',
-	VERSION => '0.05',
+	VERSION => '0.06',
 	NAME => 'X11::IdleTime',
 	LIBS => '-L/usr/X11R6/lib/ -lX11 -lXext -lXss',
 	);
@@ -39,11 +39,11 @@ The X11::IdleTime module is useful for checking how long the user has been idle.
 
 =head1 AUTHOR
 
-Adam Wendt <adam@ipwebdev.com> (http://ipwebdev.com/weblog/)
+Adam Wendt <thelsdj@gmail.com> (http://blog.thelsdj.org/)
 
 =head1 COPYRIGHT
 
-Copyright 2003-2007 Adam Wendt <thelsdj@gmail.com>
+Copyright 2003-2008 Adam Wendt <thelsdj@gmail.com>
 
 This library is free software; you can redistribute it and/or modify it under the same terms as Perl itself.
 

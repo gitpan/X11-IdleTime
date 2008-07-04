@@ -1,5 +1,8 @@
 Revision history for Perl extension X11::IdleTime.
 
+0.08  Fri Jul 4 10:02:00 2008
+    - Added license, tests for POD correctness and POD coverage
+
 0.07  Thu Jul 3 20:51:00 2008
     - Tweaked META.yml to correctly detect Inline::MakeMaker
       as a build requirement

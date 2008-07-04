@@ -7,11 +7,11 @@ use vars qw($VERSION @ISA @EXPORT @EXPORT_OK);
 require Exporter;
 @ISA = qw(Exporter);
 @EXPORT = qw(GetIdleTime);
-$VERSION = '0.07';
+$VERSION = '0.08';
 
 use Inline (
 	C => 'DATA',
-	VERSION => '0.07',
+	VERSION => '0.08',
 	NAME => 'X11::IdleTime',
 	LIBS => '-L/usr/X11R6/lib/ -lX11 -lXext -lXss',
 	);

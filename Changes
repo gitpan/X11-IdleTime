@@ -1,5 +1,8 @@
 Revision history for Perl extension X11::IdleTime.
 
+0.09  Wed Jul 9 22:29:00 2014
+    - Updated Makefile.PL to require Inline::C
+
 0.08  Fri Jul 4 10:02:00 2008
     - Added license, tests for POD correctness and POD coverage
 
